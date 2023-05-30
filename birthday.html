@@ -1,23 +1,42 @@
 <!DOCTYPE html>
 <html>
-<title>365 BIRTHDAYS</title>
-<body onload="window.open
-('BD.html','_blank', 'width=400, height=250, left=450, top=250')">
 <head>
-<h1>365 BIRTHDAYS</h1>
+   <title>HAPPYBIRTHDAY</title>
+    
 </head>
 <body>
+    <h1>HAPPYBIRTHDAY</h1>
 
-<import requsts></import>
-<c:out value="1.html"></c:out>
+    <div id="infoContainer" class="info-container"></div>
 
-   <table width="1000" ,border="1", bordercolor="pink">
-    <tr>
-        <th> gg </th>
-        <th>hh</th>
-    </tr>
-   </table>
+    <script>
+        // URL 매개변수에서 정보 가져오기
+        var urlParams = new URLSearchParams(window.location.search);
+        var birthday = urlParams.get("birthday");
+        var color = urlParams.get("color");
+        var name = urlParams.get("name");
 
+        // 정보 표시 함수
+        function displayInfo() {
+            var infoContainer = document.getElementById("infoContainer");
+            var info = "Birthday: " + birthday + "<br>";
+            info += "Favorite Color: <span style='color:" + color + ";'>" + color + "</span><br>";
+            info += "Name: " + name;
+            infoContainer.innerHTML = info;
+        }
+
+        // 페이지 로드 시 정보 표시
+        window.addEventListener("DOMContentLoaded", function() {
+            displayInfo();
+        });
+
+        // 로컬 스토리지에 정보 저장
+        localStorage.setItem("birthday", birthday);
+        localStorage.setItem("color", color);
+        localStorage.setItem("name", name);
+    </script>
 </body>
-
 </html>
+
+
+
