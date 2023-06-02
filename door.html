@@ -1,19 +1,35 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-          .center-text {
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .center-text {
             text-align: center;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-          }
-        </style>
-      </head>
-      <body>
-        <div class="center-text">
-          <h4>
+        }
+
+        .center-text h4 {
+            font-size: 18px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .center-text h4 {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="center-text">
+        <h4>
             2017
             <br><br><a href="2018.html">2018</a>
             <br><br>2019
@@ -23,7 +39,6 @@
             <br><br>2023
             <br><br>cv
         </h4>
-        </div>
-      </body>
-    
+    </div>
+</body>
 </html>
