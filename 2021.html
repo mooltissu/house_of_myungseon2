@@ -1,94 +1,94 @@
 <!DOCTYPE html>
 <html style="background-color: black;">
 
+<head>
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        .centered-image {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 100vh; /* 이미지를 수직 가운데로 정렬하려면 필요한 경우에만 사용하세요 */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
         }
-      </style>
-      
-      <div class="centered-image">
-    <img src="https://user-images.githubusercontent.com/134612609/242487590-30ea3007-0012-486a-bee9-7b19e55feeb2.jpg" width="500">
 
-    <img src="https://user-images.githubusercontent.com/134612609/242487605-ee241a92-1779-4970-9ef6-8f4b62ab1075.jpg" width="500">
-    <img src="">
-</div>
+        .centered-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
 
-<div class="centered-image">
-    <img src="https://user-images.githubusercontent.com/134612609/242763461-d23bd58b-54aa-4e5e-8949-c02c9f1a2e2e.jpg" width="500">
+        .centered-image img {
+            width: 100%;
+            max-width: 500px;
+        }
 
-    <img src="https://user-images.githubusercontent.com/134612609/242763466-56fc1e63-6e14-49fb-a9ec-c5dde2a8c496.jpg" width="500">
-    <img src="">
-</div>
+        .centered-text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            padding: 0 10px;
+        }
 
-<div class="centered-image">
-    <img src="https://user-images.githubusercontent.com/134612609/242763670-334f8faa-2f0e-4ef1-8d56-c9137b6c7fc5.jpg" width="500">
+        .centered-text h6 {
+            font-size: 16px;
+            line-height: 1.5;
+        }
 
-    <img src="https://user-images.githubusercontent.com/134612609/242763694-e378acf0-7681-49a3-aa24-759d4856eeb9.jpg" width="500">
-    <img src="">
-</div>
+        @media screen and (max-width: 600px) {
+            .centered-text h6 {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
 
-<div class="centered-image">
-    <img src="https://user-images.githubusercontent.com/134612609/242764212-07179036-ca15-4052-bf02-52cd4f17b3ca.jpg" width="500">
+<body>
+    <div class="centered-image">
+        <img src="https://user-images.githubusercontent.com/134612609/242487590-30ea3007-0012-486a-bee9-7b19e55feeb2.jpg" alt="Image 1">
+        <img src="https://user-images.githubusercontent.com/134612609/242487605-ee241a92-1779-4970-9ef6-8f4b62ab1075.jpg" alt="Image 2">
+    </div>
 
-    <img src="https://user-images.githubusercontent.com/134612609/242763990-7096203c-c702-4825-840c-8b0a64e475b9.jpg" width="500">
-    <img src="">
-</div>
+    <div class="centered-image">
+        <img src="https://user-images.githubusercontent.com/134612609/242763461-d23bd58b-54aa-4e5e-8949-c02c9f1a2e2e.jpg" alt="Image 3">
+        <img src="https://user-images.githubusercontent.com/134612609/242763466-56fc1e63-6e14-49fb-a9ec-c5dde2a8c496.jpg" alt="Image 4">
+    </div>
 
-<div class="centered-image">
-    <img src="https://user-images.githubusercontent.com/134612609/242764400-37aacf32-a002-4664-b54d-8427371b5485.jpg" width="500">
+    <div class="centered-image">
+        <img src="https://user-images.githubusercontent.com/134612609/242763670-334f8faa-2f0e-4ef1-8d56-c9137b6c7fc5.jpg" alt="Image 5">
+        <img src="https://user-images.githubusercontent.com/134612609/242763694-e378acf0-7681-49a3-aa24-759d4856eeb9.jpg" alt="Image 6">
+    </div>
 
-    <img src="https://user-images.githubusercontent.com/134612609/242764424-24f10f04-607f-4dc9-b3db-3b56f337b9ef.jpg" width="500">
-    <img src="">
-</div>
+    <div class="centered-image">
+        <img src="https://user-images.githubusercontent.com/134612609/242764212-07179036-ca15-4052-bf02-52cd4f17b3ca.jpg" alt="Image 7">
+        <img src="https://user-images.githubusercontent.com/134612609/242763990-7096203c-c702-4825-840c-8b0a64e475b9.jpg" alt="Image 8">
+    </div>
 
-<div class="centered-image">
-    <img src="https://user-images.githubusercontent.com/134612609/242764569-2332151c-f8c7-4ad4-8f76-7e0c9241487c.jpg" width="500">
+    <div class="centered-image">
+        <img src="https://user-images.githubusercontent.com/134612609/242764400-37aacf32-a002-4664-b54d-8427371b5485.jpg" alt="Image 9">
+        <img src="https://user-images.githubusercontent.com/134612609/242764424-24f10f04-607f-4dc9-b3db-3b56f337b9ef.jpg" alt="Image 10">
+    </div>
 
-    <img src="https://user-images.githubusercontent.com/134612609/242764575-6d94574e-0344-4fed-98d7-bb2148bc45d8.jpg" width="500">
-    <img src="">
-</div>
+    <div class="centered-image">
+        <img src="https://user-images.githubusercontent.com/134612609/242764569-2332151c-f8c7-4ad4-8f76-7e0c9241487c.jpg" alt="Image 11">
+        <img src="https://user-images.githubusercontent.com/134612609/242764575-6d94574e-0344-4fed-98d7-bb2148bc45d8.jpg" alt="Image 12">
+    </div>
 
-<div class="centered-image">
-    <img src="https://user-images.githubusercontent.com/134612609/242764664-e4c11232-460d-4c36-a0ca-5194efb9573c.jpg" width="500">
+    <div class="centered-image">
+        <img src="https://user-images.githubusercontent.com/134612609/242764664-e4c11232-460d-4c36-a0ca-5194efb9573c.jpg" alt="Image 13">
+        <img src="https://user-images.githubusercontent.com/134612609/242764701-ba832d61-080a-405b-bea1-5c7c85dbf55a.jpg" alt="Image 14">
+    </div>
 
-    <img src="https://user-images.githubusercontent.com/134612609/242764701-ba832d61-080a-405b-bea1-5c7c85dbf55a.jpg" width="500">
-    <img src="">
-</div>
+    <div class="centered-text">
+        <h6>유서라는 가제의 이 작업은 죽기 전에 남기는 저의 모습들입니다. 각각의 손수건에는 저의 습관, 기억, 청춘 등이 분류되어 들어가 있습니다. 
+            <br>늘 건네는 물음, 되돌아 받길 바라는 이기적인 물음 '안녕 그곳은 잘 지내시나요'라고 마지막으로 당신에게 또 인사를 건네어 봅니다.
+            <br><br>This work, tentatively titled "suicide note", is about me leaving behind before I die. Each handkerchief contains my habits, memories, youth, etc.
+            <br>The question I always ask, the selfish question I hope to get back, "Hello, how are you there?" Lastly, I'd like to say hello to you again.
+        </h6>
+    </div>
+</body>
 
-<style>
-    .centered-text {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh; /* 텍스트를 수직 가운데로 정렬하려면 필요한 경우에만 사용하세요 */
-      color: white;
-    }
-  </style>
-  
-  <div class="centered-text">
-    <h6>유서라는 가제의 이 작업은 죽기 전에 남기는 저의 모습들입니다. 각각의 손수건에는 저의 습관, 기억, 청춘 등이 분류되어 들어가 있습니다. 
-      <br>  늘 건네는 물음, 되돌아 받길 바라는 이기적인 물음 '안녕 그곳은 잘 지내시나요'라고 마지막으로 당신에게 또 인사를 건네어 봅니다.        
-    <br><br>This work, tentatively titled "suicide note", is about me leaving behind before I die. Each handkerchief contains my habits, memories, youth, etc.
-    <br> The question I always ask, the selfish question I hope to get back, "Hello, how are you there?" Lastly, I'd like to say hello to you again.
-    </h6>
-  </div>
-
-
-<div class="centered-image">
-    <img src="" width="500">
-
-    <img src="" width="500">
-    <img src="">
-</div>
-
-<div class="centered-image">
-    <img src="" width="500">
-
-    <img src="" width="500">
-    <img src="">
-</div>
-    </html>
+</html>
